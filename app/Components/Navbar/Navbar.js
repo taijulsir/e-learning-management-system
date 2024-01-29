@@ -5,7 +5,7 @@ import NavbarRoute from './NavbarRoute/NavbarRoute';
 const Navbar = () => {
     return (
         <div>
-            <div>
+            <div className=' hidden lg:flex'>
                 <TopLevelNavbar></TopLevelNavbar>
             </div>
             <div>

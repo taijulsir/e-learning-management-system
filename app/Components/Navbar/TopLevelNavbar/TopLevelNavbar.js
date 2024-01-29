@@ -10,7 +10,7 @@ import { FaTwitter } from "react-icons/fa";
 
 const TopLevelNavbar = () => {
     return (
-        <div>
+        <div className='w-full'>
             <div className='max-w-5xl mx-auto bg-zinc-950 flex justify-between items-center px-5 py-3'>
                 {/* Website logo */}
                 <div>
@@ -50,6 +50,8 @@ const TopLevelNavbar = () => {
                     </div>
                 </div>
             </div>
+
+            <hr  className='mt-10 w-full'/>
         </div>
     );
 };
