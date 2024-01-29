@@ -1,15 +1,26 @@
 import React from 'react';
-import TopLevelNavbar from './TopLevelNavbar/TopLevelNavbar';
-import NavbarRoute from './NavbarRoute/NavbarRoute';
+import LgTopLevelNavbar from './LgTopLevelNavbar/LgTopLevelNavbar';
+import LgNavbarRoute from './LgNavbarRoute/LgNavbarRoute';
+import SmallDeviceNavbar from './SmallDeviceNavbar/SmallDeviceNavbar';
 
 const Navbar = () => {
     return (
         <div>
-            <div className=' hidden lg:flex'>
-                <TopLevelNavbar></TopLevelNavbar>
+            {/* For large screen */}
+            <div className='hidden lg:flex lg:flex-col'>
+                <div>
+                    <LgTopLevelNavbar></LgTopLevelNavbar>
+                </div>
+                <div>
+                    <LgNavbarRoute></LgNavbarRoute>
+                </div>
             </div>
-            <div>
-                <NavbarRoute></NavbarRoute>
+
+            {/* For Mobile Device */}
+            <div className=' lg:hidden'>
+                <div>
+                    <SmallDeviceNavbar></SmallDeviceNavbar>
+                </div>
             </div>
         </div>
     );

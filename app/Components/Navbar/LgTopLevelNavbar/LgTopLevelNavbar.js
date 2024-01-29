@@ -8,7 +8,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 
 
-const TopLevelNavbar = () => {
+const LgTopLevelNavbar = () => {
     return (
         <div className='w-full'>
             <div className='max-w-5xl mx-auto bg-zinc-950 flex justify-between items-center px-5 py-3'>
@@ -56,4 +56,4 @@ const TopLevelNavbar = () => {
     );
 };
 
-export default TopLevelNavbar;
+export default LgTopLevelNavbar;

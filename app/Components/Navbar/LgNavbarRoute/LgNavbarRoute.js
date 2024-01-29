@@ -4,13 +4,13 @@ import { MdOutlineExpandMore } from "react-icons/md";
 import { FaUser } from "react-icons/fa";
 
 
-const NavbarRoute = () => {
+const LgNavbarRoute= () => {
     const navlinks =
 
         <>
             <li><Link href={"/"}>Home</Link></li>
-            <li className='flex gap-1 items-center group relative '>Class 5-12 <MdOutlineExpandMore />
-                <ul className=' hidden group-hover:flex group-hover:flex-col absolute top-6 px-3 py-2 bg-slate-900 text-white '>
+            <li className='flex gap-1 items-center group relative '>Classes <MdOutlineExpandMore />
+                <ul className=' hidden group-hover:flex group-hover:flex-col absolute top-6 px-3 py-2 bg-slate-900 text-white rounded-md shadow-md'>
                     <li>Hsc</li>
                     <li>Hsc</li>
                     <li>Hsc</li>
@@ -50,4 +50,4 @@ const NavbarRoute = () => {
     );
 };
 
-export default NavbarRoute;
+export default LgNavbarRoute;
